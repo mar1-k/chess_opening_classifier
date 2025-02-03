@@ -4,9 +4,9 @@
 This project is a machine learning neural network solution to classify chess positions into their corresponding openings based on the board state (represented as a FEN codes). The model analyzes the current board position and classifies it into the Chess opening it thinks that this board most likely had. , providing the top 5 most likely classifications with their confidence scores. This is a multi-class classification problem where each board position can potentially match multiple standard chess openings, especially in cases of transpositions.
 
 ## Why work on this?
-Transposition Detection: Helps identify when different move orders lead to the same opening structure
-Game Analysis: Enables quick classification of games by opening type
-Learning Value: I figured this would be a fun and unique way to learn neural networks 
+- Transposition Detection: Helps identify when different move orders lead to the same opening structure
+- Game Analysis: Enables quick classification of games by opening type
+- Learning Value: I figured this would be a fun and unique way to learn neural networks 
 
 ## Dataset
 
@@ -102,34 +102,51 @@ I selected it because:
    - CNN architecture may be unnecessarily complex
    - Would benefit from dropout and architecture specifications
 
-Model architecture
-Feature engineering approach
-Training parameters
-Classification metrics (accuracy, precision, recall, F1-score)
-Confusion matrix for top opening classifications]
 
-Project Structure
-Copychess_opening_classifier/
-├── README.md
+## Project Structure
+```
+chess_opening_classifier/
+├── classify_opening_api/
+│   ├── classify.py
+│   ├── dense_neural_network_v2.bin #Model files have been placed in this directory as well for ease of dockerizing
+│   ├── dockerfile
+│   ├── label_encoder.pkl
+│   └── requirements.txt
 ├── data/
-│   └── openings_dataset.csv
+│   ├── preprocessing/
+│   │   ├── process_boards.py
+│   │   └── process_raw_csv.py
+│   ├── .gitattributes
+│   └── chess_boards_sample.csv
 ├── models/
-│   └── [saved model files]
-├── notebook.ipynb        # Data preparation, EDA, model selection
-├── train.py             # Training script
-├── predict.py           # Classification service
-├── requirements.txt
-└── Dockerfile
-Environment Setup
+│   ├── cnn_v1.bin
+│   ├── cnn_v2.bin
+│   ├── dense_neural_network_v1.bin
+│   ├── dense_neural_network_v2.bin
+│   └── label_encoder.pkl
+├── .gitignore
+├── LICENSE
+├── notebook.ipynb
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+├── test_api_cloud.py
+├── test_api_local.py
+└── train.py
+```
+
+##Environment Setup
 
 Clone the repository:
-
-bashCopygit clone https://github.com/[your-username]/chess-opening-classifier.git
+```
+git clone https://github.com/mar1-k/chess-opening-classifier.git
 cd chess-opening-classifier
+```
 
-Create and activate a virtual environment:
+Create and activate a conda virtual environment:
 
-bashCopypython -m venv venv
+
+python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 Install dependencies:
@@ -179,8 +196,8 @@ Classification report]
 
 Dependencies
 
-Python 3.8+
-pandas
+Python 3.10+
+polars
 scikit-learn
 numpy
 flask
