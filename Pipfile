@@ -7,13 +7,12 @@ name = "pypi"
 polars = "*"
 numpy = "*"
 matplotlib = "*"
-ipykernel = "*"
 seaborn = "*"
 scikit-learn = "*"
 chess = "*"
-tensorflow = "*"
+ipykernel = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.10"
