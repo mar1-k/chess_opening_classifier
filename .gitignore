@@ -3,3 +3,5 @@ data/chess_games_raw.csv
 data/processed_chess_boards.csv
 data/.DS_Store
 .DS_Store
+__pycache__/train.cpython-310.pyc
+classify_opening_api/__pycache__/classify.cpython-310.pyc
