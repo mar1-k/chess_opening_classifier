@@ -1,0 +1,5 @@
+data/chess_games_columns_reduced.csv
+data/chess_games_raw.csv
+data/processed_chess_boards.csv
+data/.DS_Store
+.DS_Store
