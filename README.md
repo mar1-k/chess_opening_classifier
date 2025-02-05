@@ -2,7 +2,7 @@
 
 Access the GCP cloud run deployed live classification model via API at https://chess-opening-classification-api-akkxliqoya-uc.a.run.app/classify 
 
-See test_classify_api_cloud.py or test.ipynb for examples on how to use this API
+See [test_classify_api_cloud.py](https://github.com/mar1-k/chess_opening_classifier/blob/main/test_classify_api_cloud.py) or [test.ipynb](https://github.com/mar1-k/chess_opening_classifier/blob/main/test.ipynb) for examples on how to use this API
 
 ## Problem Description
 This project is a machine learning neural network solution to classify chess positions into their corresponding openings based on the board state (represented as a FEN codes). The model analyzes the current board position and classifies it into the Chess opening it thinks that this board most likely had. This is a multi-class classification problem where each board position can potentially match multiple standard chess openings, especially in cases of transpositions. The neural networks were trained via Pytorch. 
@@ -196,7 +196,7 @@ chess_opening_classifier/
 
 You can directly make POST requests to the live deployed classification API at https://chess-opening-classification-api-akkxliqoya-uc.a.run.app/classify 
 
-See test_classify_api_cloud.py or test.ipynb for examples on how to use this API
+See [test_classify_api_cloud.py](https://github.com/mar1-k/chess_opening_classifier/blob/main/test_classify_api_cloud.py) or [test.ipynb](https://github.com/mar1-k/chess_opening_classifier/blob/main/test.ipynb) for examples on how to use this API
 
 You may also deploy the neural network on your local machine via docker at then test via test_classify_api_local.py
 
