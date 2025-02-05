@@ -238,7 +238,7 @@ Get the environment name so that you may install it via ipykernel:
 pipenv --venv
 ```
 
-Install the pipenv environment to ipykernel so that it may be used with the notebook - you need the output of step 5 for the name (example: chess_elo_prediction-main-eZII8GvJ)
+Install the pipenv environment to ipykernel so that it may be used with the notebook - you need the output of step 5 for the name (example: chess_opening_classifier-Nbaf3HzU)
 ```
 python -m ipykernel install --user --name=<YOUR-virtualenv-name->
 ```
