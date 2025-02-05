@@ -325,7 +325,7 @@ docker push gcr.io/chess-opening-classifier/chess-opening-classification-api:lat
 
 7. Terraform init and apply
 - While in the Terraform folder of this project run `terraform init` and then `terraform apply`
-- Review the Terraform plan and type `yes` if everything looks good, you should see `Plan: 18 to add, 0 to change, 0 to destroy.
+- Review the Terraform plan and type `yes` if everything looks good, you should see `Plan: 2 to add, 0 to change, 0 to destroy.
 
 8. Navigate to the frontend url provided by Terraform
 
