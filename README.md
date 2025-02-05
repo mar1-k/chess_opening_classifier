@@ -268,7 +268,7 @@ NOTE: You may run into issues running the notebook and train.py if you have insu
 ```
 python train.py
 ```
-This will generate the model binary picke files and place them in the `models/` directory.
+This will generate the model binary binaries and place them in the `models/` directory.
 
 
 ## Serve the model locally via docker
