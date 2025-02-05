@@ -1,8 +1,22 @@
+import warnings
+import os
+import sys
+from contextlib import redirect_stderr
+from io import StringIO
+
+# Silence specific warnings related to attempting to train on CPU
+warnings.filterwarnings('ignore', category=UserWarning, module='torch.*')
+warnings.filterwarnings('ignore', message='.*Numpy v2.*')
+
+# Import torch with suppressed stderr
+with redirect_stderr(StringIO()):
+    import torch
+    import torch.nn as nn
+    import torch.optim as optim
+
+
 import polars as pl
 import numpy as np
-import torch
-import torch.nn as nn
-import torch.optim as optim
 import pickle
 from sklearn.preprocessing import LabelEncoder
 from pathlib import Path
