@@ -10,3 +10,4 @@ cloud_deployment/terraform/.terraform.tfstate.lock.info
 cloud_deployment/terraform/.terraform/providers/registry.terraform.io/hashicorp/google/6.19.0/darwin_amd64/terraform-provider-google_v6.19.0_x5
 cloud_deployment/terraform/terraform.tfstate
 cloud_deployment/terraform/terraform.tfstate.backup
+cloud_deployment/terraform/.terraform/providers/registry.terraform.io/hashicorp/google/6.19.0/darwin_amd64/LICENSE.txt
