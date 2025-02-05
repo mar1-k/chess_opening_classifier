@@ -15,6 +15,7 @@ torch = "*"
 uvicorn = "*"
 numpy = "*"
 requests = "*"
+notebook = "*"
 
 [dev-packages]
 
