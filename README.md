@@ -1,6 +1,8 @@
 # Chess Opening Classification
 
-Access the GCP cloud run deployed live classification model via API at https://chess-opening-classification-api-akkxliqoya-uc.a.run.app/classify
+Access the GCP cloud run deployed live classification model via API at https://chess-opening-classification-api-akkxliqoya-uc.a.run.app/classify 
+
+See test_classify_api.cloud.py or test.ipynb for details on how to use this API!
 
 ## Problem Description
 This project is a machine learning neural network solution to classify chess positions into their corresponding openings based on the board state (represented as a FEN codes). The model analyzes the current board position and classifies it into the Chess opening it thinks that this board most likely had. , providing the top 5 most likely classifications with their confidence scores. This is a multi-class classification problem where each board position can potentially match multiple standard chess openings, especially in cases of transpositions.
