@@ -37,7 +37,7 @@ I selected it because:
    - Appropriate learning rate
    - Best overall stability
 
-See notebook.ipynb for full analysis
+See [notebook.ipynb](https://github.com/mar1-k/chess_opening_classifier/blob/main/notebook.ipynb) for full analysis
 
 ## Model Performance and conclusions
 
